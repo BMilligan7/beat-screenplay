@@ -1,0 +1,26 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.openai/
+.wrangler/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+coverage/
+.DS_Store
+
+# Local writing material and export artifacts
+/outputs/
+/private-data/
+/local-data/
+/screenshots/
+*.pdf
+*.docx
+*.fountain
+*.bak
+*.pem
+*.key

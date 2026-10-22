@@ -1,0 +1,36 @@
+.project-library { height:100vh; overflow:auto; background:var(--soft); }
+.library-topbar { height:76px; display:flex; align-items:center; gap:24px; padding:0 5vw; border-bottom:1px solid var(--line); background:var(--paper); }
+.library-topbar > span:last-child { font-size:14px; color:var(--muted); border-left:1px solid var(--line-strong); padding-left:24px; }
+.library-content { max-width:1160px; margin:0 auto; padding:54px 32px; }
+.library-heading { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:32px; }
+.library-eyebrow { color:var(--oxblood); font-size:12px; letter-spacing:.12em; font-weight:700; }
+.library-heading h1 { margin:8px 0 12px; font-size:38px; letter-spacing:-1px; }
+.library-heading p:last-child { font-size:16px; color:var(--muted); line-height:1.5; margin:0; }
+.library-heading .primary-button { flex-shrink:0; }
+.project-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:22px; }
+.project-card { padding:0; text-align:left; border:1px solid var(--line-strong); border-radius:10px; background:var(--paper); overflow:hidden; cursor:pointer; display:flex; flex-direction:column; min-width:0; box-shadow:0 3px 9px #30202005; }
+.project-card:hover { border-color:var(--oxblood); box-shadow:0 6px 20px #3020200b; }
+.project-cover { height:105px; padding:24px; display:flex; justify-content:space-between; align-items:flex-end; color:var(--oxblood); background:#f2e9e6; border-bottom:1px solid var(--line); }
+.project-cover span { font-size:12px; letter-spacing:.11em; }
+.project-card-content { display:grid; gap:12px; padding:24px; }
+.project-card-content strong { font-size:23px; line-height:1.25; overflow-wrap:anywhere; font-family:"Courier Prime",monospace; }
+.project-card-content small { font-size:13px; color:var(--muted); }
+.project-card-content > span { display:flex; align-items:center; justify-content:space-between; gap:16px; color:var(--oxblood); font-size:14px; margin-top:10px; }
+.new-project-form { display:flex; align-items:flex-end; gap:12px; background:var(--paper); border:1px solid var(--line-strong); border-radius:10px; padding:24px; margin-bottom:24px; }
+.new-project-form > div { flex:1; min-width:0; }
+.new-project-form label,.library-existing label { display:block; font-size:14px; font-weight:600; margin-bottom:9px; }
+.new-project-form input,.library-existing input { width:100%; min-width:0; height:44px; padding:10px 12px; border:1px solid var(--line-strong); border-radius:6px; background:white; font-size:16px; }
+.library-error { padding:16px; border:1px solid #e5b6b6; background:#fff5f5; color:var(--oxblood); margin-bottom:24px; line-height:1.5; }
+.library-error button { margin-left:16px; color:var(--oxblood); background:transparent; border:0; text-decoration:underline; cursor:pointer; }
+.library-empty { text-align:center; padding:48px 24px; border:1px dashed var(--line-strong); border-radius:10px; color:var(--muted); }
+.library-empty h2 { color:var(--oxblood); font-size:22px; }
+.library-empty p { font-size:16px; line-height:1.5; }
+.library-existing { margin-top:32px; border-top:1px solid var(--line-strong); padding-top:24px; font-size:14px; }
+.library-existing summary { cursor:pointer; }
+.library-existing form { max-width:680px; padding-top:22px; }
+.library-existing form > div { display:flex; gap:10px; }
+.library-existing button { flex-shrink:0; }
+.library-existing p { color:var(--oxblood); }
+.library-local { margin-top:20px; border:0; background:none; text-decoration:underline; color:var(--muted); cursor:pointer; }
+.library-button { border:0; background:transparent; color:var(--oxblood); font-size:14px; cursor:pointer; padding:6px; }
+@media(max-width:640px){ .library-content{padding:28px 18px}.library-heading{align-items:flex-start;flex-direction:column;gap:18px}.library-heading h1{font-size:32px}.library-topbar{padding:0 18px}.new-project-form{flex-wrap:wrap;padding:18px}.new-project-form>div{flex-basis:100%}.library-existing form>div{flex-wrap:wrap}.library-existing input{flex-basis:100%} }
